@@ -35,3 +35,6 @@
 20220720	10:04:35	f7a4a41d-0058-4e6a-9a30-b8e7c8331e64	GET	undefined	/dev
 20220720	10:04:55	b2db3740-935e-4d35-a4db-f991e7ebc82c	GET	undefined	/dev
 20220720	10:05:24	3fc09a58-9ed6-4355-a7ed-1d4aaf843f5b	GET	undefined	/dev
+20221016	15:24:32	b353f2f8-54a5-4546-b1a6-23299cfebc8e	GET	undefined	/
+20221016	15:24:33	dabebd93-c424-4421-ac44-9431b15881a2	GET	undefined	/favicon.ico
+20221016	15:27:30	875ea24e-cee1-43d9-8844-4fe8334b817e	GET	undefined	/
