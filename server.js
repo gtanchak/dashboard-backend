@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
 const app = express();
 const path = require("path");
 
@@ -33,13 +34,18 @@ app.get("^/$|/index(.html)?", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
-app.get("/*", (req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("text").send("404 Not Found");
+  }
 });
 
-app.use(function (err, req, res, next) {
-  res.status(500).send(err.message);
-});
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 3500;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
