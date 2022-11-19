@@ -82,3 +82,5 @@
 20221119	22:42:09	dc8c4f81-b9e0-4733-873b-eacce88d4c59	GET	undefined	/css/style.css
 20221119	22:42:17	faa2b6f7-73a1-45f6-b5ee-f40e9d5ab174	GET	undefined	/sdf
 20221119	22:42:17	22d0c714-6d34-4a4d-a2d7-3bbd1ed1d5a9	GET	undefined	/css/style.css
+20221119	22:45:11	37ac6268-2af5-4af1-9cf0-6bc270fb13a6	GET	undefined	/
+20221119	22:50:52	753ff813-b92d-4f4b-86c5-2bbdfe3a55c1	GET	undefined	/

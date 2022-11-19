@@ -1,0 +1,1 @@
+20221119	22:50:52	559d720d-dcd7-42e2-8504-f33a8bb13f80	Error: Not Allowed by CORS
