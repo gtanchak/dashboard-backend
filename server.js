@@ -3,6 +3,7 @@ const cors = require("cors");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
 const corsOptions = require("./config/corsOption");
+const verifyJWT = require("./middleware/verifyJWT");
 const app = express();
 const path = require("path");
 
@@ -23,6 +24,8 @@ app.use("/", express.static(path.join(__dirname, "/public")));
 app.use("/", require("./routes/root"));
 app.use("/login", require("./routes/auth"));
 app.use("/register", require("./routes/register"));
+
+app.use(verifyJWT);
 app.use("/employees", require("./routes/api/employees"));
 
 app.all("*", (req, res) => {
