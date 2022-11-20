@@ -6,6 +6,7 @@ const corsOptions = require("./config/corsOption");
 const verifyJWT = require("./middleware/verifyJWT");
 const app = express();
 const path = require("path");
+const cookieParser = require("cookie-parser");
 
 // custom middleware logger
 app.use(logger);
@@ -13,9 +14,14 @@ app.use(logger);
 // Cross origin Resource Sharing
 app.use(cors(corsOptions));
 
+// built in middleware for form
 app.use(express.urlencoded({ extended: false }));
 
+// built in middleware for json
 app.use(express.json());
+
+// middleware for cookie
+app.use(cookieParser());
 
 // serve static files
 app.use("/", express.static(path.join(__dirname, "/public")));
@@ -23,6 +29,7 @@ app.use("/", express.static(path.join(__dirname, "/public")));
 // routes
 app.use("/", require("./routes/root"));
 app.use("/login", require("./routes/auth"));
+app.use("/refresh", require("./routes/refresh"));
 app.use("/register", require("./routes/register"));
 
 app.use(verifyJWT);

@@ -151,3 +151,15 @@
 20221120	22:14:36	867079a0-38cb-47d7-8be0-87cc6ce4ad7c	GET	undefined	/employees/1
 20221120	22:14:37	0fca4e40-f581-4775-80e5-9fd4a710fc36	GET	undefined	/employees/1
 20221120	22:14:43	665fc5be-d91c-4047-922d-23b4af7926ce	GET	undefined	/employees/1
+20221120	22:39:37	6e7c26f6-90ec-41f2-b43d-273afd5f7752	GET	undefined	/refresh
+20221120	22:40:08	f074517b-ad20-4641-877d-20adfd565f4d	POST	undefined	/login
+20221120	22:40:12	0f9c1215-898f-4b94-b8c9-55c9e62b507a	GET	undefined	/refresh
+20221120	22:41:23	25b8dc44-fb8e-4fd1-ad40-fedfa495cad1	GET	undefined	/refresh
+20221120	22:44:11	3059ef2c-e086-4964-8aaa-45ab8cb09ff4	POST	undefined	/login
+20221120	22:44:32	20c35626-ce9e-4285-9fbc-0f4f574c826e	GET	undefined	/refresh
+20221120	22:46:41	35700028-06e4-4a8c-972c-60cab53dd113	GET	undefined	/refresh
+20221120	22:46:46	aa2d1b26-1963-46a6-aa9f-119f0c13a749	GET	undefined	/refresh
+20221120	22:46:47	5331aeed-9af4-4010-b6b1-63b6f4d9f279	GET	undefined	/refresh
+20221120	22:46:48	df97bf69-5d55-4133-909e-abf97c2133e0	GET	undefined	/refresh
+20221120	22:46:48	8f1925b6-6ff7-4ac1-998d-0ed4e77bf9bd	GET	undefined	/refresh
+20221120	22:46:49	8d9d2c8b-9a6c-4ac1-903f-df969c7a1490	GET	undefined	/refresh
