@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@trpc/client':
+    specifier: 11.0.0-rc.402
+    version: 11.0.0-rc.402(@trpc/server@11.0.0-rc.402)
+  '@trpc/server':
+    specifier: 11.0.0-rc.402
+    version: 11.0.0-rc.402
   bcrypt:
     specifier: ^5.1.0
     version: 5.1.1
@@ -78,6 +84,18 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
+    dev: false
+
+  /@trpc/client@11.0.0-rc.402(@trpc/server@11.0.0-rc.402):
+    resolution: {integrity: sha512-bcI5007X6pH3IoZFvYHnJ4I4kHROaOrWJcV/Vq2h7qsKYGK/NzZ0a2lpIU4o5QX2zBQr6Xy1IvU9SpNiu5tqog==}
+    peerDependencies:
+      '@trpc/server': 11.0.0-rc.402+f5eb0631e
+    dependencies:
+      '@trpc/server': 11.0.0-rc.402
+    dev: false
+
+  /@trpc/server@11.0.0-rc.402:
+    resolution: {integrity: sha512-bXKR0pVEx5LXMhp5lLr2sMXbD4hH7PqwtfWHyrYfQ4czZdFz+V888kGa59sEX5/9JOsCaqSkchnGnyAZBvCyqg==}
     dev: false
 
   /@types/bcrypt@5.0.2:
